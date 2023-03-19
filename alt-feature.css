@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 10vh;
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-section{
+    background: url(./images/bg-hero-desktop.svg),  hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    padding: 2% 6%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0%;
+}
+header button{
+    background: white;
+    color: black;
+    border-radius: 3rem;
+    border: none;
+    padding: 7%;
+    width: 10rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 15px;
+}
+header button:hover{
+    background: white;
+    color: grey;
+}
+.intro-section .main-content{
+    display: flex;
+    margin-top: 2%;
+}
+.main-content img{
+    width: 45rem;
+}
+.main-content .text{
+    margin-top: 7%;
+    padding-right: 5%;
+}
+.main-content h1{
+    font-size: 2.7rem;
+    margin-bottom: 3%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.main-content p{
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    margin-top: 5%;
+    border: none;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    padding: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 19rem;
+    border-radius: 3rem;
+}
+button:hover{
+    background: hsl(322, 88%, 77%);
+    cursor: pointer;
+}
+.card-section{
+    padding: 10% 8%;
+    padding-bottom: 15%;
+    gap: 2.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.card-section img{
+    width: 45rem;
+    height: 22rem;
+}
+.card-section span{
+    margin-top: 9%;
+}
+.card-section h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.card-section p{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(208, 11%, 55%);
+    font-size: 1.2rem;
+    margin-top: 3%;
+}
+.grow-together-card, .your-users-card,
+.flowing-conversations-card{
+    display: flex;
+    height: 28rem;
+    border-radius: 0.8rem;
+    padding: 4% 3% 4% 9%;
+    gap: 8.5rem;
+    box-shadow: rgba(99, 99, 99, 0.279) 0px 2px 8px 0px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    background: hsl(192, 100%, 9%);
+    height: 33rem;
+    padding: 10% 5% 5% 5%;
+}
+.inbetween-card{
+    align-self: center;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.279) 0px 2px 8px 0px;
+    height: 15rem;
+    width: 45rem;
+    padding: 3% 5%;
+    z-index: 9;
+    border-radius:0.5rem;
+    top: -25%;
+    position: absolute;
+}
+.inbetween-card h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.inbetween-card button{
+    margin: 7% auto;
+    display: block;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-footer a{
+    text-decoration: none;
+    color: hsl(193, 100%, 96%);
+}
+.main-footer .logo-column{
+    width: 25%;
+}
+.main-footer .logo{
+    margin-left: -2%;
+    margin-bottom: 5%;
+}
+.main-footer span p{
+    margin-bottom: 4%;
+}
+.main-footer span img{
+    vertical-align: middle;
+    margin-right: 3%;
+}
+.about-us-column p, .career-column p{
+    margin-bottom: 20%;
+}
+.about-us-column, .career-column{
+    margin-top: 6.5%;
+}
+.socials-area{
+    display: flex;
+    margin-top: 6.5%;
+}
+.fa{
+    padding: 9%;
+    height: 3rem;
+    width: 3rem;
+    padding-bottom: 20%;
+    margin-left: 7%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.about-us-column p a:hover,
+.career-column p a:hover{
+    text-decoration: underline;
+}
+.socials-area .fa a:hover{
+    color: hsl(322, 100%, 66%);
+}
+.attribution{
+    position: relative;
+    font-size: 0.78rem;
+    margin-top: 4%;
+    text-align: center;
+    color: hsl(322, 100%, 66%); 
+    font-family: 'Poppins', sans-serif;
+}
+.attribution a{
+    color: hsl(322, 100%, 66%);
+    text-decoration: overline;
+}
+.attribution a:hover{
+    color: white;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 25rem) {
+    .intro-section{
+        background: url(./images/bg-hero-mobile.svg), hsl(193, 100%, 96%);
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+    }
+    header{
+        padding: 5% 0%;
+    }
+    header img{
+        width: 7rem;
+    }
+    header button{
+        width: 7rem;
+        padding: 6% 13%;
+        margin-top: -5%;
+    }
+    .main-content{
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 5%;
+    }
+    .main-content .text{
+        margin-top: 10%;
+        padding-right: 0;
+    }
+    .main-content h1{
+        font-size: 1.5rem;
+    }
+    .main-content p{
+        margin-top: 9%;
+        font-size: 0.93rem;
+    }
+    .main-content button{
+        margin-top: 10%;
+        width: 14rem;
+        padding: 4%;
+    }
+    .main-content img{
+        width: 18rem;
+        margin-bottom: 5%;
+    }
+    .grow-together-card, .your-users-card,
+    .flowing-conversations-card{
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        width: 20rem;
+        padding: 9%;
+    }
+    .grow-together-card img, .your-users-card img,
+    .flowing-conversations-card img{
+        width: 13rem;
+        height: 10rem;   
+        align-self: center;   
+    }
+    .grow-together-card, .your-users-card{
+        flex-direction: column-reverse;
+    }
+    .card-section span{
+       margin-top: 0%;
+        text-align: center;
+    }
+    .card-section h2{
+        font-size: 1.2rem;
+    }
+    .card-section p{
+        margin-top: 5%;
+        font-size: 0.93rem;
+    }
+    .card-section{
+        padding: 7.5%;
+        padding-bottom: 50%;
+        padding-top: 15%;
+        width: 100%;
+        justify-content: center;
+    }
+    .inbetween-card{
+        width: 21rem;
+        height: 10rem;
+        top: -10%;
+    }
+    .inbetween-card h3{
+        font-size: 1rem;
+        padding: 8% 2%;
+    }
+    .inbetween-card button{
+        width: 14rem;
+        padding: 4%;
+        margin-top: -1%;
+    }
+    footer{
+        height: 50rem;
+    }
+    footer .main-footer{
+        flex-direction: column;
+    }
+    .main-footer .logo-column{
+        width: 100%;
+    }
+    .logo-column .logo{
+        width: 11rem;
+        margin-top: 40%;
+    }
+    .logo-column span p{
+        margin-bottom: 10%;
+    }
+    .about-us-column p, .career-column p{
+        margin-bottom: 5%;
+    }
+    .about-us-column{
+        margin-top: 7%;
+    }
+    .career-column{
+        margin-top: -1%;
+    }
+    .socials-area{
+        justify-content: center;
+    }
+    .fa{
+        font-size: 5px;
+        height: 2rem;
+        width: 3rem;
+        padding: 3%;
+        text-align: center;
+        padding-right: 3%;
+        padding-bottom: 10%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+    }
+}
